@@ -1,0 +1,15 @@
+<div class="col-xs-3 clear-padding">
+    <select name="myDate" id="date" class="full-width" (change)="onChangeDate($event)">
+            <option *ngFor="let date of dates" value="{{date}}">{{date}}</option>
+        </select>
+</div>
+<div class="col-xs-3 clear-padding">
+    <select name="mymonth" id="month" class="full-width" (change)="onChangeMonth($event)">
+            <option *ngFor="let month of months" value="{{month.key}}">{{month.value}}</option>
+        </select>
+</div>
+<div class="col-xs-3 clear-padding">
+    <select name="myYear" id="year" class="full-width" (change)="onChangeYear($event)">
+            <option *ngFor="let year of years" value="{{year}}">{{year}}</option>
+        </select>
+</div>

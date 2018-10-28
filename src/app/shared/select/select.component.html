@@ -1,0 +1,11 @@
+<input [value]="inputVal" type="text" id={{controlName}} autocomplete="off" name={{contolName}} data-type="dropdown"
+    class="{{controlName}}" #{{contolName}} (focus)="showDropdown($event)" (blur)="checkContent($event)"
+    readOnlyInput (click)="showDropdown($event)" (keydown)="keyFunction($event)">
+<span class="bar"></span>
+<label for={{controlName}} class="label-active">{{controlName}}</label>
+<span class="drop-box"></span>
+<div #dropBox class="drop-box-data decrease-scale" tabindex="-1">
+    <ul *ngIf="selectSource !== null">
+        <li class="ripplelink" *ngFor="let item of selectSource" (mousedown)="selectItem(item)">{{item.value}}</li>
+    </ul>
+</div>

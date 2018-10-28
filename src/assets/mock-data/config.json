@@ -1,0 +1,17 @@
+[{
+    "screenId": 1,
+    "config": [{
+        "sortOrder": 1,
+        "controlType": "text",
+        "label": "Name",
+        "defaultValue": "dummy ",
+        "validationRules": {
+            "maxLength": 10,
+            "minLength": null,
+            "regexes": []
+        }
+
+    }]
+
+
+}]

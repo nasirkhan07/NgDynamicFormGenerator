@@ -1,0 +1,6 @@
+[
+    { "key": "null", "value": "--Select--" },
+    { "key": "M", "value": "Male" },
+    { "key": "F", "value": "Female" },
+    { "key": "O", "value": "Others" }
+]
